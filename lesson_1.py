@@ -17,7 +17,6 @@ strcount('aaaaabbbbbccdeee')'''
                 counter += 1
         print(symbol, counter)
 
-
 strcount('aaaaabbbbbccdeee')'''
 
 '''def strcount(string): # сложность O(n)
