@@ -5,6 +5,6 @@ def palindrome(s):
 while True:
     s = input("Введите слово: ")
     if palindrome(s):
-        print('True')
+        print('True!')
     else:
-        print('False')
+        print('False!')
