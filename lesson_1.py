@@ -29,3 +29,7 @@ strcount('aaaaabbbbbccdeee')'''
 
 #GIT
 # ls - просмотр всех файлов в папке
+# git status - отслеживание статуса
+# git init - инециализация
+# git add . - добавить изменение
+# git commit -m "initial commit" - сохранение изменений
