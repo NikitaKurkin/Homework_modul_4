@@ -11,11 +11,11 @@ class Advertisement(models.Model):
     title = models.CharField('Название', max_length = 128)
     description = models.TextField('Описание')
     price = models.DecimalField('Цена', max_digits=10, decimal_places=2)
-    auction = models.BooleanField('Торг', help_text='Отметьте, если торг уместен')
+    auction = models.BooleanField('Торг', help_text='Отметьте, если торг уместен', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(User, verbose_name='Пользователь', on_delete=models.CASCADE)
-    image = models.ImageField('Изображение', upload_to='advertisements/')
+    image = models.ImageField('Изображение', upload_to='advertisements/', blank=True)
     
     @admin.display(description='Дата создания')
     def created_date(self):
